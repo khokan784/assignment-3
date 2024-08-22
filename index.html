@@ -10,10 +10,63 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/9258355bb2.js" crossorigin="anonymous"></script>
+    <!-- customizing config link  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                IconColor: '#ABEF5F',
+                bgColor: 'rgba(255, 255, 255, 1)',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
-    <header></header>
+    <header class="bg-gray-500]">
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden order-last sm:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="cursor-pointer text-3xl"><i class="fa-solid fa-arrow-right w-8 h-8 bg-IconColor rounded-full text-xl -rotate-45 justify-center items-center inline-flex mr-2" aria-hidden="true"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-bold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2 hidden sm:flex">
+                    <i class="fa-solid fa-magnifying-glass border-2 w-10 h-10 items-center justify-center rounded-full inline-flex"></i>
+                    <i class="fa-solid fa-cart-shopping border-2 w-10 h-10 items-center justify-center rounded-full inline-flex"></i>
+                    <a class="btn bg-IconColor hover:none">Book Consult<i class="fa-solid fa-arrow-right w-8 h-8 bg-[#1C1C1C] rounded-full text-xl -rotate-45 justify-center items-center inline-flex text-white" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main></main>
     <footer></footer>
 </body>
